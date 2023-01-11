@@ -6,6 +6,8 @@ phases:
   build:
     commands:
       - echo Create build...
+      - npm run migration:generate
+      - npm run migration:run
       - npm run build
   post_build:
     commands:
