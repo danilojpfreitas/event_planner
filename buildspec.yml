@@ -9,6 +9,7 @@ phases:
     commands:
       - echo Create build...
       - npm run build
+      - npm run dev
   post_build:
     commands:
       - echo Removing unnecessary files...
